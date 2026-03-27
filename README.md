@@ -10,4 +10,4 @@
  qemu-system-i386 -drive format=raw,file=SaturvOs.img
  
  # Windows
- qemu-system-i386.exe -drive format=raw,file=SaturvOs.img -soundhw pcspk
+ qemu-system-i386 -drive file=SaturvOS.img,format=raw,index=0,media=disk -machine pcspk-audiodev=snd0 -audiodev dsound,id=snd0
